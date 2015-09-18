@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF5F5F6A1BAA597B00B81BEC /* usuario.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F5F691BAA597B00B81BEC /* usuario.png */; };
+		DF5F5F6C1BAA598400B81BEC /* contrasena.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F5F6B1BAA598400B81BEC /* contrasena.png */; };
+		DF5F5F6E1BAA5E3400B81BEC /* usuario2.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F5F6D1BAA5E3400B81BEC /* usuario2.png */; };
+		DF5F5F701BAA5E4700B81BEC /* contrasena2.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F5F6F1BAA5E4700B81BEC /* contrasena2.png */; };
 		DFE0D2971BA98CA800737DBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE0D2961BA98CA800737DBA /* AppDelegate.swift */; };
 		DFE0D2991BA98CA800737DBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE0D2981BA98CA800737DBA /* ViewController.swift */; };
 		DFE0D29C1BA98CA800737DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE0D29A1BA98CA800737DBA /* Main.storyboard */; };
 		DFE0D29E1BA98CA800737DBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE0D29D1BA98CA800737DBA /* Images.xcassets */; };
 		DFE0D2A11BA98CA800737DBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE0D29F1BA98CA800737DBA /* LaunchScreen.xib */; };
 		DFE0D2AD1BA98CA900737DBA /* Tarea_U3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE0D2AC1BA98CA900737DBA /* Tarea_U3Tests.swift */; };
+		DFE0D2B71BA9956400737DBA /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE0D2B61BA9956400737DBA /* loginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF5F5F691BAA597B00B81BEC /* usuario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usuario.png; sourceTree = "<group>"; };
+		DF5F5F6B1BAA598400B81BEC /* contrasena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contrasena.png; sourceTree = "<group>"; };
+		DF5F5F6D1BAA5E3400B81BEC /* usuario2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usuario2.png; sourceTree = "<group>"; };
+		DF5F5F6F1BAA5E4700B81BEC /* contrasena2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contrasena2.png; sourceTree = "<group>"; };
 		DFE0D2911BA98CA800737DBA /* Tarea.U3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarea.U3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE0D2951BA98CA800737DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFE0D2961BA98CA800737DBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +45,7 @@
 		DFE0D2A61BA98CA900737DBA /* Tarea.U3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tarea.U3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE0D2AB1BA98CA900737DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFE0D2AC1BA98CA900737DBA /* Tarea_U3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarea_U3Tests.swift; sourceTree = "<group>"; };
+		DFE0D2B61BA9956400737DBA /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF5F5F641BAA54FD00B81BEC /* imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				DF5F5F6F1BAA5E4700B81BEC /* contrasena2.png */,
+				DF5F5F6D1BAA5E3400B81BEC /* usuario2.png */,
+				DF5F5F6B1BAA598400B81BEC /* contrasena.png */,
+				DF5F5F691BAA597B00B81BEC /* usuario.png */,
+			);
+			name = imagenes;
+			sourceTree = "<group>";
+		};
 		DFE0D2881BA98CA800737DBA = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +98,14 @@
 		DFE0D2931BA98CA800737DBA /* Tarea.U3 */ = {
 			isa = PBXGroup;
 			children = (
+				DF5F5F641BAA54FD00B81BEC /* imagenes */,
 				DFE0D2961BA98CA800737DBA /* AppDelegate.swift */,
 				DFE0D2981BA98CA800737DBA /* ViewController.swift */,
 				DFE0D29A1BA98CA800737DBA /* Main.storyboard */,
 				DFE0D29D1BA98CA800737DBA /* Images.xcassets */,
 				DFE0D29F1BA98CA800737DBA /* LaunchScreen.xib */,
 				DFE0D2941BA98CA800737DBA /* Supporting Files */,
+				DFE0D2B61BA9956400737DBA /* loginViewController.swift */,
 			);
 			path = Tarea.U3;
 			sourceTree = "<group>";
@@ -194,6 +217,10 @@
 			files = (
 				DFE0D29C1BA98CA800737DBA /* Main.storyboard in Resources */,
 				DFE0D2A11BA98CA800737DBA /* LaunchScreen.xib in Resources */,
+				DF5F5F6C1BAA598400B81BEC /* contrasena.png in Resources */,
+				DF5F5F6E1BAA5E3400B81BEC /* usuario2.png in Resources */,
+				DF5F5F6A1BAA597B00B81BEC /* usuario.png in Resources */,
+				DF5F5F701BAA5E4700B81BEC /* contrasena2.png in Resources */,
 				DFE0D29E1BA98CA800737DBA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +241,7 @@
 			files = (
 				DFE0D2991BA98CA800737DBA /* ViewController.swift in Sources */,
 				DFE0D2971BA98CA800737DBA /* AppDelegate.swift in Sources */,
+				DFE0D2B71BA9956400737DBA /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +437,7 @@
 				DFE0D2B21BA98CA900737DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFE0D2B31BA98CA900737DBA /* Build configuration list for PBXNativeTarget "Tarea.U3Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +446,7 @@
 				DFE0D2B51BA98CA900737DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

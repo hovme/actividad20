@@ -329,13 +329,14 @@ class loginViewController: UIViewController {
         
         if contexto.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, error: &error) {
             println("El TouchID esta disponible para autenticar.")
+            TouchIdOK()
             return true
         } else {
             switch error!.code {
             case LAError.TouchIDNotEnrolled.rawValue:
                 println("El TouchID no configurado.")
             case LAError.PasscodeNotSet.rawValue:
-                println("No se está configurado un passcode en este dispositivo.")
+                println("No está configurado un passcode en este dispositivo.")
             default:
                 println("El TouchID no está disponible en este dispositivo")
             }
@@ -356,6 +357,7 @@ class loginViewController: UIViewController {
             reply: { (success: Bool, evalPolicyError: NSError?) -> Void in
                 if success {
                     self.darOK()
+                    self.dismissViewControllerAnimated(true, completion: nil)
                 } else {
                     println(evalPolicyError?.localizedDescription)
                     switch evalPolicyError!.code {
@@ -374,6 +376,13 @@ class loginViewController: UIViewController {
         
     
     }
+    
+    // alert ok del usuario
+    func TouchIdOK() {
+        var alert : UIAlertView = UIAlertView(title: "Ingreso", message: "Se ha validado pulentamente el acceso con huella, ingrese", delegate: self, cancelButtonTitle: "OK")
+    }
+    
+    
     // alert ok del usuario
     func darOK() {
         var alert : UIAlertView = UIAlertView(title: "Ingreso pulento", message: "Se ha validado pulentamente el usuario", delegate: self, cancelButtonTitle: "OK")

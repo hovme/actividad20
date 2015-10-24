@@ -240,7 +240,7 @@ class loginViewController: UIViewController {
                     // guardamos en la caché
                     var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
                     // tomamos el nombre de usuario y lo guardamos
-                    prefs.setObject(user.self, forKey: "USERNAME")
+                    prefs.setObject(self.usuario, forKey: "USERNAME")
                     // también si está logeado
                     prefs.setInteger(1, forKey: "ISLOGGEDIN")
                     // se sincroniza

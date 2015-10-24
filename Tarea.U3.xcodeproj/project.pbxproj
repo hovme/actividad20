@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF1FE1AF1BDC1D22004CC5A8 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FE1AE1BDC1D22004CC5A8 /* LocalAuthentication.framework */; };
 		DF5F5F6A1BAA597B00B81BEC /* usuario.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F5F691BAA597B00B81BEC /* usuario.png */; };
 		DF5F5F6C1BAA598400B81BEC /* contrasena.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F5F6B1BAA598400B81BEC /* contrasena.png */; };
 		DF5F5F6E1BAA5E3400B81BEC /* usuario2.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F5F6D1BAA5E3400B81BEC /* usuario2.png */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF1FE1AE1BDC1D22004CC5A8 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		DF5F5F691BAA597B00B81BEC /* usuario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usuario.png; sourceTree = "<group>"; };
 		DF5F5F6B1BAA598400B81BEC /* contrasena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contrasena.png; sourceTree = "<group>"; };
 		DF5F5F6D1BAA5E3400B81BEC /* usuario2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usuario2.png; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1FE1AF1BDC1D22004CC5A8 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +83,7 @@
 		DFE0D2881BA98CA800737DBA = {
 			isa = PBXGroup;
 			children = (
+				DF1FE1AE1BDC1D22004CC5A8 /* LocalAuthentication.framework */,
 				DFE0D2931BA98CA800737DBA /* Tarea.U3 */,
 				DFE0D2A91BA98CA900737DBA /* Tarea.U3Tests */,
 				DFE0D2921BA98CA800737DBA /* Products */,
